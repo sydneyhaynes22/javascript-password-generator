@@ -2,8 +2,31 @@
 var generateBtn = document.querySelector("#generate");
 
 function generatePassword(){
-  //YOUR CODE GOES HERE
-  
+  var potentialSpecial = "!#$%&()*+,-./:;<=>?@[\]^_`{|}~";
+  var letters = "abcdefghijklmnopqrstuvwxyz";
+  var numbers = "0987654321";
+  var upLetters = letters.toUpperCase();
+
+  var isUppercase = confirm("Would you like to use uppercase")
+  var isLowercase
+  var isSpecial
+  var isNumber
+
+  if (isUppercase) {
+    console.log("uppercase")
+  }
+
+  if (isLowercase) {
+    console.log("lowercase")
+  }
+
+  if (isSpecial) {
+console.log("special")
+  }
+
+  if (isNumber) {
+    console.log("number")
+  }
 }
 
 // Write password to the #password input
