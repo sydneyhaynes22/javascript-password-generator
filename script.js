@@ -7,6 +7,10 @@ function generatePassword(){
   var numbers = "0987654321";
   var upLetters = letters.toUpperCase();
   var chooseFrom = "";
+  var randomPassword = "";
+  var Password 
+  
+  
 
   
 
@@ -36,9 +40,10 @@ function generatePassword(){
 
  
 
-  if (isUppercase) {
+  if (isUppercase) { 
     console.log("uppercase");
     chooseFrom += upLetters;
+
   }
 
   if (isLowercase) {
@@ -55,7 +60,14 @@ function generatePassword(){
     console.log("number")
     chooseFrom += numbers
   }
+
+  for (var i = 0; i <= chooseFrom; i++) {
+    randomPassword = 
+  }
+
 }
+
+
 
 // Write password to the #password input
 function writePassword() {
