@@ -7,13 +7,8 @@ function generatePassword(){
   var numbers = "0987654321";
   var upLetters = letters.toUpperCase();
   var chooseFrom = "";
-  var randomPassword = "";
-  var Password 
-  
-  
 
   
-
   var islength = prompt("What is the length of the password?")
 
   if (islength > 128 ) {
@@ -32,38 +27,50 @@ function generatePassword(){
   }
 
 
-  var isUppercase = confirm("Would you like to use uppercase letters?")
-  var isLowercase = confirm("Would you like to use lowercase letters?")
-  var isSpecial = confirm("Would you like to use special characters?")
-  var isNumber = confirm("Would you like to use numbers?")
+  var isUppercase = confirm("Would you like to use uppercase letters?");
+  var isLowercase = confirm("Would you like to use lowercase letters?");
+  var isSpecial = confirm("Would you like to use special characters?");
+  var isNumber = confirm("Would you like to use numbers?");
 
 
  
+  var generatedPassword = "";
 
   if (isUppercase) { 
-    console.log("uppercase");
+    // console.log("uppercase");
     chooseFrom += upLetters;
-
+    generatedPassword+=upLetters[Math.floor(Math.random()*upLetters.length)]
   }
 
   if (isLowercase) {
-    console.log("lowercase");
+    // console.log("lowercase");
     chooseFrom += letters;
+    generatedPassword+=letters[Math.floor(Math.random()*letters.length)]
+
   }
 
   if (isSpecial) {
-    console.log("special");
+    // console.log("special");
     chooseFrom += potentialSpecial;
+    generatedPassword+=potentialSpecial[Math.floor(Math.random()*potentialSpecial.length)]
+
   }
 
   if (isNumber) {
-    console.log("number")
+    // console.log("number")
     chooseFrom += numbers
+    generatedPassword+=numbers[Math.floor(Math.random()*numbers.length)]
+
   }
 
-  for (var i = 0; i <= chooseFrom; i++) {
-    randomPassword = 
+console.log(generatedPassword)
+
+  for (var i = 0; i < islength; i++) {
+  generatedPassword+= chooseFrom[Math.floor(Math.random() * chooseFrom.length)]
+  
   }
+
+  return generatedPassword
 
 }
 
