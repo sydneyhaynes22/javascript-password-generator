@@ -34,7 +34,7 @@ function generatePassword(){
 
 
  
-  var generatedPassword = "";
+  var generatedPassword = ""
 
   if (isUppercase) { 
     // console.log("uppercase");
@@ -66,7 +66,7 @@ function generatePassword(){
 console.log(generatedPassword)
 
   for (var i = 0; i < islength; i++) {
-  generatedPassword+= chooseFrom[Math.floor(Math.random() * chooseFrom.length)]
+  generatedPassword += chooseFrom[Math.floor(Math.random() *chooseFrom.length)]
   
   }
 
